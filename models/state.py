@@ -1,8 +1,13 @@
 #!/usr/bin/python3
-""" State Module for HBNB project """
+'''class inherent of BaseModel'''
 from models.base_model import BaseModel
 
 
 class State(BaseModel):
-    """ State class """
+    '''class State'''
+
     name = ""
+
+    def __init__(self, *args, **kwargs):
+        """initializes State"""
+        super().__init__(*args, **kwargs)
