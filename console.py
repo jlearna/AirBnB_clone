@@ -177,7 +177,6 @@ class HBNBCommand(cmd.Cmd):
                 Usage: <class_name>.update(<id>, <dictionary representation>)
 
         """
-
         args = arg.split('.')
         if args[0] in self.__classes:
             if args[1] == "all()":
